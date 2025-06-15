@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "AI Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.מדריכים": {
+    "message": "מדריכים",
+    "description": "Navbar item with label מדריכים"
+  },
+  "item.label.צרו קשר": {
+    "message": "צרו קשר",
+    "description": "Navbar item with label צרו קשר"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
