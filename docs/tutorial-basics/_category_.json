@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "שימושים נפוצים",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "כל השימושים הנפוצים ביותר במודל שפה כדי לייעל את העבודה שלכם משמעותית"
   }
 }

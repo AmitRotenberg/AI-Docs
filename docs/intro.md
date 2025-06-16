@@ -4,51 +4,95 @@ sidebar_position: 1
 
 # מדריכים - מבוא
 
-בואו לגלות איך **! משתמשים בבינה מלאכותית בפחות מ 5 דקות**
+בואו לגלות איך **משתמשים בבינה מלאכותית בפחות מ 5 דקות !**
 
 ## בואו נתחיל
 ### מושגים חשובים
 
- המערכת של ענף רימון לשימוש בAI - **[Rchat](https://docusaurus.new)** 
+  **[Rchat](https://docusaurus.new)** - המערכת של ענף רימון לשימוש בAI
 
 **Prompt** - ההודעה אותה אנו שולחים למודל השפה
 לדוגמה:
 ```bash
 Tell me a funny joke
 ```
-### ?Prompt איך כותבים
 
-### Prompt Engineering עקרונות 
+**מודל שפה (LLM)** - המנוע שמעבד את הבקשה שלנו ומחזיר תשובה
 
+### איך כותבים Prompt?
+- **בהירות ומיקוד 🎯**
+  - להגדיר בדיוק את מה שאנחנו רוצים שהמודל יעשה
+  - להמנע מניסוחים כלליים או מעורפלים
+  - **דוגמה:**
+    - "תכתוב משהו על היסטוריה." ❌
+    - "כתוב פסקה בת 100 מילים על חשיבות מהפכת הדפוס באירופה." ✅ 
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- **מבנה מפורש עם דוגמאות 🧱**
+  - אם המשימה מורכבת או תבניתית - תנו דוגמה !
+  - פרומפט עם פורמט קבוע מקל על המודל לשחזר את הפורמט
+  - **דוגמה:**
+    ```bash
+    ? שאלה: מי היה ראש ממשלת ישראל הראשון
+    תשובה: דוד בן-גוריון
 
-## Generate a new site
+    ? שאלה: מה בירת צרפת
+    :תשובה
+    ```
 
-Generate a new Docusaurus site using the **classic template**.
+- **הקשר ורקע 🧠**
+  - תנו למודל את ההקשר שהוא צריך כדי להבין את המשימה
+  - אם השאלה נשענת על טקסט/מידע קודם — תכניסו אותו בפרומפט.
+  - **דוגמה:**
+    -  "בהתבסס על הקטע הבא, נסח שלוש שאלות הבנה ברמת ניתוח..." ✅ 
 
-The classic template will automatically be added to your project after you run the command:
+- **הגדרת סגנון, טון או מגבלות 📝**
+  - בקש במפורש סגנון מסוים: מקצועי, ידידותי, תקני, שפה פשוטה, בעברית בלבד, וכו'.
+  - **דוגמה:**
+    -  "כתוב תשובה מקצועית ומנומקת, בעברית, בטון פורמלי." ✅ 
+
+- **ניסוח אינטראקטיבי או שלבי 🧪**
+  - לפרומפטים מורכבים, עדיף לפרק לשלבים:
+  - **דוגמה:**
+    - שלב 1: סכם את הטקסט
+    - שלב 2: זיהוי רעיון מרכזי
+    - שלב 3: ניסוח שאלת הבנה
+
+:::tip
+מודל שפה אומן ברובו בשפה **האנגלית** ולכן מומלץ תמיד לכתוב את הפרומפט שלנו **באנגלית**
+:::
+
+### דוגמה ליישום כל העקרונות
 
 ```bash
-npm init docusaurus@latest my-website classic
+You are a professional content editor.
+
+Based on the following article, perform the following three tasks step-by-step:
+
+**Step 1:** Summarize the main idea of the article in no more than 3 sentences.  
+**Step 2:** Identify and list two key arguments that support the main idea.  
+**Step 3:** Rephrase the summary from Step 1 using simpler, conversational English suitable for a high-school audience.
+
+Use the following format in your response:
+
+Step 1: Summary
+[Your summary here]
+
+Step 2: Key Arguments
+1. [First argument]
+2. [Second argument]
+
+Step 3: Simplified Summary
+[Rephrased version]
+
+Write clearly and professionally. Keep the tone neutral and informative.
+
+Here is the article:
+"""
+[Insert article text here]
+"""
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+לאחר שלמדתם איך לכתוב פרומפט נכון בואו נעבור לרשימת הפרומפטים המוכנים !
+**[שימושים נפוצים](category/שימושים-נפוצים)**
 
-The command also installs all necessary dependencies you need to run Docusaurus.
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
