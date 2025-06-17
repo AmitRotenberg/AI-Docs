@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        בינה מלאכותית מאפשרת לבצע משימות כמו סיכום, תרגום, חילוץ טקסט והבנת תמונה תוך שניות.
+        במקום לעבוד ידנית על כל קובץ או מסמך — פשוט מעלים את התוכן ומקבלים תוצאה מידית.
       </>
     ),
   },
@@ -25,8 +25,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        המערכות שלנו עושות את העבודה הטכנית בשבילכם — אתם יכולים להתמקד בתוכן, בתובנות ובשיקול דעת אנושי.
+        המודלים מטפלים בטקסטים, תמונות, קוד ומידע מגוון ומחזירים תוצאות מדויקות.
       </>
     ),
   },
@@ -35,8 +35,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        באמצעות כלים חכמים מבוססי בינה מלאכותית, אתם חוסכים זמן, מצמצמים טעויות ומעלים את רמת האוטומציה והדיוק בכל משימה חוזרת.
+        כל משתמש בארגון יכול להפוך ליותר אפקטיבי תוך דקות.
       </>
     ),
   },

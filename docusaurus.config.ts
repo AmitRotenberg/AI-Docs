@@ -83,7 +83,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'מדריכים',
+          label: 'שימושים',
         },
         {to: '/blog', label: 'צרו קשר', position: 'left'},
       ],
@@ -95,7 +95,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'מדריכים',
+              label: 'שימושים',
               to: '/docs/intro',
             },
           ],
